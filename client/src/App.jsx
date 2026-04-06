@@ -13,6 +13,7 @@ import StudentViewCourseDetailsPage from "./pages/student/course-details";
 import PaypalPaymentReturnPage from "./pages/student/payment-return";
 import StudentCoursesPage from "./pages/student/student-courses";
 import StudentViewCourseProgressPage from "./pages/student/course-progress";
+import LandingPage from "./pages/student/landing";
 
 function App() {
   const { auth } = useContext(AuthContext);
@@ -63,13 +64,15 @@ function App() {
         path="/"
         element={
           <RouteGuard
-            element={<StudentViewCommonLayout />}
+            element={
+              auth?.authenticate ? <StudentViewCommonLayout /> : <LandingPage />
+            }
             authenticated={auth?.authenticate}
             user={auth?.user}
           />
         }
       >
-        <Route path="" element={<StudentHomePage />} />
+        <Route path="" element={auth?.authenticate ? <StudentHomePage /> : null} />
         <Route path="home" element={<StudentHomePage />} />
         <Route path="courses" element={<StudentViewCoursesPage />} />
         <Route
