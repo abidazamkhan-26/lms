@@ -248,7 +248,6 @@ function LandingPage() {
             <p className="py-4 text-center text-xs md:text-sm">
         © 2026 Gadgety. Developed By <span href="" target="_blank" className="font-medium ">Abid Azam Khan</span> · CEO of <span href="" target="_blank" className="font-medium">Unipixer</span>
       </p>
-            </p>
             <div className="flex items-center gap-6">
                 <a href="#" className="text-slate-400 hover:text-indigo-600 transition-colors">Privacy</a>
                 <a href="#" className="text-slate-400 hover:text-indigo-600 transition-colors">Terms</a>
