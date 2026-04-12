@@ -245,8 +245,9 @@ function LandingPage() {
             <div className="flex items-center gap-2">
               <img src="/logo.png" alt="LMS Logo" className="h-8 w-auto" />
             </div>
-            <p className="text-sm text-slate-500">
-              © 2026 Lora. Developed By <a href="https://abidazam.com" target="_blank" rel="noreferrer" className="text-indigo-600 hover:underline">Abid Azam Khan</a> · CEO of <a href="https://unipixer.com" target="_blank" rel="noreferrer" className="text-indigo-600 hover:underline">Unipixer</a>
+            <p className="py-4 text-center text-xs md:text-sm">
+        © 2026 Gadgety. Developed By <span href="" target="_blank" className="font-medium ">Abid Azam Khan</span> · CEO of <span href="" target="_blank" className="font-medium">Unipixer</span>
+      </p>
             </p>
             <div className="flex items-center gap-6">
                 <a href="#" className="text-slate-400 hover:text-indigo-600 transition-colors">Privacy</a>
